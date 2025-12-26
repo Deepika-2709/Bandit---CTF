@@ -1,64 +1,125 @@
-# OverTheWire Bandit (Level 0–32)
+# Bandit CTF – Complete GitHub Repository Overview (Levels 0–34)
+
+## 📌 Overview
+Bandit is a beginner-friendly Linux wargame by **OverTheWire** designed to teach fundamental cybersecurity and command-line skills.  
+Players connect to a remote server via SSH and solve progressively harder challenges by finding passwords stored in files, services, or binaries.
+
+This repository documents **Bandit Levels 0–34** with explanations, commands, and concepts learned.
 
 ---
 
-## Overview
-
-OverTheWire **Bandit** is an entry-level wargame designed to introduce users to fundamental Linux concepts through hands-on problem solving. It is widely used by beginners in cybersecurity, ethical hacking, and system administration to build confidence with the Linux command line and common security-related tasks.
-
-Each level requires the user to discover a password that grants access to the next level, encouraging exploration, experimentation, and research.
-
----
-
-## Purpose
-
-The purpose of the Bandit wargame is to:
-
-- Teach practical Linux command-line usage
-- Develop problem-solving and debugging skills
-- Introduce common CTF-style challenges
-- Build familiarity with real-world security concepts
-- Prepare learners for intermediate CTF platforms such as TryHackMe and Hack The Box
-
-Bandit emphasizes **learning by doing**, rather than theoretical instruction.
+## 🎯 Purpose
+The Bandit wargame helps learners:
+- Gain confidence using the Linux terminal
+- Understand file systems, permissions, and ownership
+- Learn data encoding and compression techniques
+- Practice networking and SSH-based attacks
+- Build a foundation for Capture The Flag (CTF) challenges
+- Prepare for platforms like TryHackMe and Hack The Box
 
 ---
 
-## Level Coverage
-
-The Bandit wargame consists of **33 levels**, ranging from **Level 0 to Level 32**.  
-Each level increases slightly in complexity and introduces new concepts.
-
-### Level Range Breakdown
-
-| Level Range | Focus Area |
-|------------|-----------|
-| 0 – 5 | Linux basics and file handling |
-| 6 – 10 | File discovery and text processing |
-| 11 – 15 | Encoding, decoding, and networking |
-| 16 – 20 | Services, ports, and permissions |
-| 21 – 24 | Cron jobs and automation |
-| 25 – 26 | Restricted shells and privilege escalation |
-| 27 – 30 | Git repositories and version control |
-| 31 – 32 | Git automation and challenge completion |
+## 🧠 Skills & Concepts Covered
+- Linux navigation (`ls`, `cd`, `pwd`)
+- File handling (`cat`, `less`, `file`)
+- Hidden files and special filenames
+- Permissions & ownership (`chmod`, `find`)
+- Text processing (`grep`, `sort`, `uniq`, `awk`)
+- Compression (`tar`, `gzip`, `bzip2`)
+- Encoding & decoding (`base64`, `hex`, `ROT13`)
+- Networking (`nc`, `telnet`, `openssl`)
+- SSH keys and authentication
+- Cron jobs and scripting basics
+- Binary analysis and privilege escalation
 
 ---
 
-## Repository Structure
+## 📂 Level Coverage (0–34)
 
-A recommended repository or notes structure for Bandit progression is shown below:
+### 🔰 Beginner Levels (0–5)
+Focus: Linux basics  
+- SSH login  
+- Reading files  
+- Hidden files  
+- Filenames with spaces/symbols  
+- Finding files by size  
 
-```text
+### 🔐 Intermediate Levels (6–15)
+Focus: File permissions & encoding  
+- User/group ownership  
+- Searching files across directories  
+- Base64 decoding  
+- Compressed files  
+- Data extraction  
+
+### 🧪 Advanced Levels (16–25)
+Focus: Networking & automation  
+- SSL connections  
+- Port-based challenges  
+- SSH key authentication  
+- Cron jobs  
+- Environment variables  
+
+### 🚀 Expert Levels (26–34)
+Focus: Binary exploitation  
+- SetUID binaries  
+- Command execution  
+- Shell escaping  
+- Strings and binary analysis  
+- Privilege escalation concepts  
+
+---
+
+## 🗂️ Repository Structure
 bandit/
-├── README.md
-├── level-00/
-│   └── notes.md
-├── level-01/
-│   └── notes.md
-├── level-02/
-│   └── notes.md
-├── ...
-├── level-31/
-│   └── notes.md
-└── level-32/
-    └── summary.md
+├── level00/
+│ ├── README.md
+│ └── solution.md
+├── level01/
+├── level02/
+│ └── ...
+├── level34/
+│ └── solution.md
+└── README.md
+
+---
+
+## 🧾 Level Documentation Format
+Each level contains:
+- Level Objective
+- Commands Used
+- Explanation
+- Password / Flag
+- Concepts Learned
+
+---
+
+## 🧪 Tools Used
+- ssh
+- cat, ls, find
+- grep, sort, uniq
+- file, strings
+- tar, gzip, bzip2
+- nc, openssl
+- cron, env
+
+---
+
+## ⚠️ Disclaimer
+This repository is for **educational purposes only**.  
+Do not use these techniques on systems without proper authorization.
+
+---
+
+## 📖 Resources
+- OverTheWire Bandit: https://overthewire.org/wargames/bandit/
+- Linux Manual Pages (`man`)
+- TryHackMe & Hack The Box
+
+---
+
+## 🏁 Conclusion
+Completing Bandit Levels 0–34 provides a strong foundation in Linux and cybersecurity fundamentals, preparing learners for advanced CTFs and real-world security challenges.
+
+Happy Hacking 🚩
+
