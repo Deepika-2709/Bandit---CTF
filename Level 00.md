@@ -28,7 +28,7 @@ This file contains the password required to proceed to **Bandit Level 1**.
 ---
 
 ## 🖼️ Screenshot Location
-`screenshots/level00.png`
+`screenshot/level00.png`
 
 ---
 
