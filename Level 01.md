@@ -19,11 +19,6 @@ The goal of this level is to:
 
 ## 📸 Screenshot (Level 0 Output)
 
-The screenshot below shows:
-- Successful SSH login as `bandit0`
-- Listing files in the home directory
-- Reading the `readme` file to obtain the password
-
 ![Bandit Level 1 Screenshot](screenshot/level01.png)
 
 ---
