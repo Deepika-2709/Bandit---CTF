@@ -1,7 +1,7 @@
-# OverTheWire Bandit – Level 3 → Level 4 (Detailed Walkthrough)
+# OverTheWire Bandit – Level 4 → Level 5 (Detailed Walkthrough)
 
 ## 🔐 Level Objective
-The objective of **Bandit Level 3 → Level 4** is to find the password for the next level.
+The objective of **Bandit Level 4 → Level 5** is to find the password for the next level.
 
 According to the level description, the password is stored in **one of the files inside the `inhere` directory**, and the correct file is the one that contains **human-readable text**.
 
@@ -133,4 +133,4 @@ Use the password shown above.
 ---
 
 ## ✅ Completion Status
-✔️ Bandit Level 3 → Level 4 successfully completed
+✔️ Bandit Level 4 → Level 5 successfully completed
