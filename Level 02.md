@@ -1,7 +1,7 @@
-# OverTheWire Bandit – Level 1 → Level 2 (Detailed Walkthrough)
+# OverTheWire Bandit – Level 2 → Level 3 (Detailed Walkthrough)
 
 ## 🔐 Level Objective
-The objective of **Bandit Level 1 → Level 2** is to obtain the password for the next level.
+The objective of **Bandit Level 2 → Level 3** is to obtain the password for the next level.
 
 According to the official level description, the password is stored in a file named:
 
@@ -97,4 +97,4 @@ Use the password obtained from the previous step.
 ---
 
 ## ✅ Completion Status
-✔️ Bandit Level 1 → Level 2 successfully completed
+✔️ Bandit Level 2 → Level 3 successfully completed
