@@ -1,43 +1,102 @@
-# 🏁 Bandit Level 0 → Level 1
+# OverTheWire Bandit – Level 0 → Level 1 (Detailed Walkthrough)
 
-## 🎯 Objective
-The goal of this level is to:
-- Connect to the Bandit server using SSH
-- Locate the password file named `readme`
-- Read the contents of the file
-- Use the obtained password to log in to **bandit1**
+## 🔐 Level Objective
+The objective of **Bandit Level 0 → Level 1** is to retrieve the password for the next level.
+
+In this level, the password is stored in a file named:
+
+```
+-
+```
+
+This file is located in the **home directory**.
 
 ---
 
 ## 🖥️ Environment Details
-- **Server**: bandit.labs.overthewire.org  
-- **Port**: 2220  
-- **Username**: bandit0  
-- **Operating System**: Kali Linux  
+- Operating System: Kali Linux (VirtualBox)
+- Wargame: OverTheWire Bandit
+- Connection Method: SSH
+- Port: 2220
+- Current User: `bandit0`
 
 ---
 
-## 📸 Screenshot (Level 0 Output)
+## 🔑 Login Command
+```bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
 
+After successful login, the terminal prompt appears as:
+```bash
+bandit0@bandit:~$
+```
+
+---
+
+## 🧪 Commands Used and Explanation
+
+### 1️⃣ List files in the home directory
+```bash
+ls
+```
+
+### Output:
+```
+-
+```
+
+📌 **Explanation**:
+- The `ls` command lists files in the current directory
+- The filename is `-`, which is a special character in Linux
+- Files starting with `-` are often misinterpreted as command options
+
+---
+
+### 2️⃣ Read the file named `-` safely
+```bash
+cat ./-
+```
+
+📌 **Explanation**:
+- Using `-` alone would be treated as standard input
+- Prefixing with `./` forces Linux to treat it as a filename
+- This command correctly displays the file contents
+
+---
+
+## 🔐 Password Obtained
+```
+263JGJPfgU6LdEvgfW1XP5yac29mFx
+```
+
+This is the password for **Bandit Level 1**.
+
+---
+
+## ➡️ Login to the Next Level
+```bash
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+```
+Use the password shown above.
+
+---
+
+## 🖼️ Screenshot Evidence
+
+### 📷 Terminal Output – Reading File Named `-`
 ![Bandit Level 1 Screenshot](screenshot/level01.png)
 
 ---
 
-## 🛠️ Commands Used
-
-### Step 1: Connect to the Bandit server
-```bash
-ssh bandit0@bandit.labs.overthewire.org -p 2220
+## 📘 Key Learning Outcomes
+- Filenames beginning with `-` can be misinterpreted as command options
+- `./` is used to explicitly reference files in the current directory
+- `ls` helps identify unusual filenames
+- `cat` reads file contents safely when handled correctly
+- Understanding special filenames is essential in Linux and CTF challenges
 
 ---
 
-### ✅ What this fixes
-✔ Clearly explains **access credentials**  
-✔ Properly documents **SSH usage**  
-✔ Matches your **screenshot (level00.png)**  
-✔ Clean Markdown for GitHub preview  
-
-If you want, I can now:
-- Rewrite **Level 1 → Level 2** in the same style  
-- Standardize all levels into a **professional CTF report format**  
-- Review your repo structure (`screenshots/`, `.md` naming, etc.)
+## ✅ Completion Status
+✔️ Bandit Level 0 → Level 1 successfully completed
