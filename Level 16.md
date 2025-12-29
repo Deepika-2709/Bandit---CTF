@@ -88,7 +88,7 @@ EReVavePLFHtFlFsjn3hyzMlvsSuSAcRD
 
 ![Bandit Level 16 Step 1](screenshot/level16_1.png)
 
-![Bandit Level 16 Step 2](screenshot/level16_22.png)
+![Bandit Level 16 Step 2](screenshot/level16_2.png)
 
 ![Bandit Level 16 Step 3](screenshot/level16_3.png)
 
