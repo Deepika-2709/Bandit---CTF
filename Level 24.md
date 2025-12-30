@@ -110,9 +110,9 @@ ssh bandit25@bandit.labs.overthewire.org -p 2220
 
 ## 🖼️ Screenshot Evidence
 
-![Bandit Level 24](screenshot/level24_1png)
+![Bandit Level 24_1](screenshot/level24_1png)
 
-![Bandit Level 24](screenshot/level24_2.png)
+![Bandit Level 24_2](screenshot/level24_2.png)
 
 ---
 
