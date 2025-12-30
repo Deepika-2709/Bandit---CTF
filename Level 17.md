@@ -1,45 +1,88 @@
-# OverTheWire Bandit – Level 17 → Level 18
+# OverTheWire Bandit – Level 18 → Level 19
 
 ## 🎯 Level Objective
-The objective of **Bandit Level 17 → Level 18** is to retrieve the next level’s password by **connecting to a local service that provides a passphrase-protected SSH private key**, then using that key to log in via SSH.
+The goal of **Bandit Level 18 → Level 19** is to retrieve the password for the next level.
 
-This level introduces:
-- Handling **passphrase-protected SSH keys**
-- Secure **key-based SSH authentication**
-- Proper **file permission management**
+In this level:
+- Normal SSH login does not work
+- The `.bashrc` file immediately logs the user out
+- A command must be executed directly during SSH login to bypass the restriction
 
 ---
 
 ## 🖥️ Environment Details
-- Current User: bandit17  
-- Target Port: 32256  
-- Service Type: Passphrase-protected SSH key service  
-- Password File: `/etc/bandit_pass/bandit17`
+- Wargame: OverTheWire Bandit
+- Current User: bandit18
+- SSH Port: 2220
+- Restriction: `.bashrc` contains an `exit` command that closes the shell
 
 ---
 
-## 🔐 Commands Used
-```bash
-cat /etc/bandit_pass/bandit17 | ncat localhost 32256
-nano key18
-chmod 600 key18
-ssh -i key18 bandit18@localhost
-cat /etc/bandit_pass/bandit18
+## 🔐 Login Command
+ssh bandit18@bandit.labs.overthewire.org -p 2220
+
+⚠️ When logging in normally, the SSH session closes immediately.
 
 ---
 
-## 📤Output Received
+## 🧪 Step-by-Step Solution
 
------BEGIN RSA PRIVATE KEY-----
-...
------END RSA PRIVATE KEY-----
+### Step 1️⃣ Analyze the Issue
+- SSH authentication succeeds
+- Shell starts briefly
+- `.bashrc` executes automatically
+- The shell exits instantly
 
-Th1s1sTh3N3xtP4ssw0rdF0rB4ndit18
+Reason:
+The `.bashrc` file is intentionally modified to prevent interactive access.
 
 ---
 
-🔑 Password for Next Level (Bandit18)
-Th1s1sTh3N3xtP4ssw0rdF0rB4ndit18
+### Step 2️⃣ Bypass the `.bashrc` Restriction
+Execute a command directly during SSH login instead of opening an interactive shell:
 
-🖼️ Screenshot Evidence
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+
+Why this works:
+- The command runs in a non-interactive session
+- `.bashrc` cannot block single-command execution
+
+---
+
+### Step 3️⃣ Retrieve the Password
+Output displayed on the terminal:
+
+xgKQCvYb2h1H5p8pZyZ6fXoOe7R
+
+This is the password for **bandit19**.
+
+---
+
+## 🔐 Password Found
+xgKQCvYb2h1H5p8pZyZ6fXoOe7R
+
+---
+
+## ➡️ Login to Next Level
+Use the password above to log in to the next level:
+
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+
+---
+
+## 🖼️ Screenshot Evidence
+
+![Bandit Level 17 Screenshot](screenshot/level17.png)
+---
+
+## 📘 Key Concepts Learned
+- Difference between interactive and non-interactive SSH sessions
+- How `.bashrc` affects shell behavior
+- Executing remote commands directly over SSH
+- Bypassing restricted shell environments
+
+---
+
+## ✅ Level Status
+✔️ Bandit Level 18 → Level 19 completed successfully
 
