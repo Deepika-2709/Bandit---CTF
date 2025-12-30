@@ -82,7 +82,6 @@ ssh bandit27@bandit.labs.overthewire.org -p 2220
 
 ![Bandit Level 26_3](screenshot/level26_3.png)
 
-![Bandit Level 26_4](screenshot/level26_4.png)
 ────────────────────────────────────────
 
 📘 Key Concepts Learned  
