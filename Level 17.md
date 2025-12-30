@@ -1,7 +1,7 @@
-# OverTheWire Bandit – Level 18 → Level 19
+# OverTheWire Bandit – Level 17 → Level 18
 
 ## 🎯 Level Objective
-The goal of **Bandit Level 18 → Level 19** is to retrieve the password for the next level.
+The goal of **Bandit Level 17 → Level 18** is to retrieve the password for the next level.
 
 In this level:
 - Normal SSH login does not work
@@ -84,5 +84,5 @@ ssh bandit19@bandit.labs.overthewire.org -p 2220
 ---
 
 ## ✅ Level Status
-✔️ Bandit Level 18 → Level 19 completed successfully
+✔️ Bandit Level 17 → Level 18 completed successfully
 
