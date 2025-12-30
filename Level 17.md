@@ -12,14 +12,14 @@ In this level:
 
 ## 🖥️ Environment Details
 - Wargame: OverTheWire Bandit
-- Current User: bandit18
+- Current User: bandit17
 - SSH Port: 2220
 - Restriction: `.bashrc` contains an `exit` command that closes the shell
 
 ---
 
 ## 🔐 Login Command
-ssh bandit18@bandit.labs.overthewire.org -p 2220
+ssh bandit17@bandit.labs.overthewire.org -p 2220
 
 ⚠️ When logging in normally, the SSH session closes immediately.
 
@@ -41,7 +41,7 @@ The `.bashrc` file is intentionally modified to prevent interactive access.
 ### Step 2️⃣ Bypass the `.bashrc` Restriction
 Execute a command directly during SSH login instead of opening an interactive shell:
 
-ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+ssh bandit17@bandit.labs.overthewire.org -p 2220 cat readme
 
 Why this works:
 - The command runs in a non-interactive session
@@ -66,7 +66,7 @@ xgKQCvYb2h1H5p8pZyZ6fXoOe7R
 ## ➡️ Login to Next Level
 Use the password above to log in to the next level:
 
-ssh bandit19@bandit.labs.overthewire.org -p 2220
+ssh bandit18@bandit.labs.overthewire.org -p 2220
 
 ---
 
