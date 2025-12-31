@@ -121,5 +121,8 @@ Do not use these techniques on systems without proper authorization.
 ## 🏁 Conclusion
 Completing Bandit Levels 0–32 provides a strong foundation in Linux and cybersecurity fundamentals, preparing learners for advanced CTFs and real-world security challenges.
 
-Happy Hacking 🚩
+👤 Author
+
+Deepika
+CSE Student
 
