@@ -1,10 +1,10 @@
-# Bandit CTF – Complete GitHub Repository Overview (Levels 0–34)
+# Bandit CTF – Complete GitHub Repository Overview (Levels 0–32)
 
 ## 📌 Overview
 Bandit is a beginner-friendly Linux wargame by **OverTheWire** designed to teach fundamental cybersecurity and command-line skills.  
 Players connect to a remote server via SSH and solve progressively harder challenges by finding passwords stored in files, services, or binaries.
 
-This repository documents **Bandit Levels 0–34** with explanations, commands, and concepts learned.
+This repository documents **Bandit Levels 0–32** with explanations, commands, and concepts learned.
 
 ---
 
@@ -34,7 +34,7 @@ The Bandit wargame helps learners:
 
 ---
 
-## 📂 Level Coverage (0–34)
+## 📂 Level Coverage (0–32)
 
 ### 🔰 Beginner Levels (0–5)
 Focus: Linux basics  
@@ -60,7 +60,7 @@ Focus: Networking & automation
 - Cron jobs  
 - Environment variables  
 
-### 🚀 Expert Levels (26–34)
+### 🚀 Expert Levels (26–32)
 Focus: Binary exploitation  
 - SetUID binaries  
 - Command execution  
@@ -78,7 +78,7 @@ bandit/
 ├── level01/
 ├── level02/
 │ └── ...
-├── level34/
+├── level32/
 │ └── solution.md
 └── README.md
 
@@ -119,7 +119,7 @@ Do not use these techniques on systems without proper authorization.
 ---
 
 ## 🏁 Conclusion
-Completing Bandit Levels 0–34 provides a strong foundation in Linux and cybersecurity fundamentals, preparing learners for advanced CTFs and real-world security challenges.
+Completing Bandit Levels 0–32 provides a strong foundation in Linux and cybersecurity fundamentals, preparing learners for advanced CTFs and real-world security challenges.
 
 Happy Hacking 🚩
 
